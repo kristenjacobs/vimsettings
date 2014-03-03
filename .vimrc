@@ -58,7 +58,7 @@ if has("gui_running")
     set guifont=Courier\ New
     set lines=50 columns=120
   else
-    set directory=/tmp/vim
+    set directory=/tmp
     "set guifont=Courier\ 10\ Pitch\ 12
     set lines=40 columns=100
   endif
