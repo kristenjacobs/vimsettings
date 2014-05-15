@@ -11,6 +11,7 @@ set nowrap
 set number
 set guioptions+=b
 set showmode
+set nomore
 
 " Shifts backwards and forward 
 " through the open buffers...
