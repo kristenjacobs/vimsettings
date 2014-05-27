@@ -47,9 +47,8 @@ if version >= 700
   set cursorline
 endif
 
-" Gui specific stuff.
+" Color scheme.
 if has("gui_running") 
-  " colo zellner
   colo jurrasic
 else
   set bg=dark
