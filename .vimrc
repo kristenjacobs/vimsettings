@@ -72,3 +72,5 @@ endif
 " buffer without overwriting the current buffer contents
 vmap m "_dP
 
+" Fixes an issue with the Nerd Tree.
+let g:NERDTreeDirArrows=0
