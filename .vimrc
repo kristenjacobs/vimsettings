@@ -73,3 +73,7 @@ vmap m "_dP
 
 " Fixes an issue with the Nerd Tree.
 let g:NERDTreeDirArrows=0
+
+" Set tab completion to match bash
+set wildmode=longest,list
+
