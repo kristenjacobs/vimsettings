@@ -49,9 +49,11 @@ endif
 
 " Color scheme.
 if has("gui_running") 
-  colo jurrasic
+  set background=dark
+  colorscheme desert
 else
-  set bg=dark
+  set background=dark
+  colorscheme desert
 endif
 
 " Platform specific stuff 
