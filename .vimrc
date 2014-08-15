@@ -61,12 +61,11 @@ endif
 if has("gui_running") 
   if has("win32")
     set directory=C:\Temp\vim
-    set guifont=Courier\ New
     set lines=50 columns=120
   else
     set directory=/tmp
-    "set guifont=Courier\ 10\ Pitch\ 12
     set lines=40 columns=100
+    set guifont=Monospace\ 9
   endif
 endif
 
