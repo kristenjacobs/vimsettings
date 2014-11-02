@@ -49,13 +49,9 @@ if version >= 700
 endif
 
 " Color scheme.
-if has("gui_running") 
-  set background=dark
-  colorscheme desert
-else
-  set background=dark
-  colorscheme desert
-endif
+set background=dark
+" colorscheme desert
+colorscheme zenburn
 
 " Platform specific stuff 
 if has("gui_running") 
