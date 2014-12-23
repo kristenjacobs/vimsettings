@@ -50,8 +50,8 @@ endif
 
 " Color scheme.
 set background=dark
-" colorscheme desert
-colorscheme zenburn
+colorscheme desert
+" colorscheme zenburn
 
 " Platform specific stuff 
 if has("gui_running") 
