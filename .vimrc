@@ -17,11 +17,11 @@ set nomore
 
 " Shifts backwards and forward 
 " through the open buffers...
-map <C-right> :bn<CR>
-map <C-left>  :bp<CR>
-map <C-up>    :b#<CR>
+map <C-S-right> :bn<CR>
+map <C-S-left>  :bp<CR>
+map <C-S-up>    :b#<CR>
 
-" Shifts backwards and forwards 
+" Shifts
 " through the open tabs...
 map <C-Tab>   :tabn<CR>
 map <C-S-Tab> :tabp<CR>
@@ -50,8 +50,9 @@ endif
 
 " Color scheme.
 set background=dark
-colorscheme desert
-" colorscheme zenburn
+" colorscheme desert
+" colorscheme solarized
+colorscheme zenburn
 
 " Platform specific stuff 
 if has("gui_running") 
