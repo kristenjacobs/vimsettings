@@ -56,8 +56,9 @@ set background=dark
 " colorscheme solarized
 colorscheme zenburn
 
-" Overrides the search hilighting colors.
+" Overrides the hi-lighting colors.
 highlight Search guibg=peru guifg=wheat
+highlight MatchParen guifg=IndianRed
 
 " Platform specific stuff 
 if has("gui_running") 
