@@ -32,7 +32,8 @@ map <F2> :NERDTreeToggle<CR>                " Toggles the opening of the nerd tr
 map <F3> :TlistToggle<CR>                   " Toggles the opening of the tag list window
 map <F4> :b#<CR>                            " Switches to the alternative buffer
 map <F5> :make<CR>                          " Runs the make command
-map <F6> :CtrlPBuffer<CR>
+
+map <c-b> :CtrlPBuffer<CR>
 
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
