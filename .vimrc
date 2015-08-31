@@ -82,3 +82,5 @@ let g:NERDTreeDirArrows=0
 " Set tab completion to match bash
 set wildmode=longest,list
 
+" Enables the listing of open buffers.
+let g:airline#extensions#tabline#enabled = 1
