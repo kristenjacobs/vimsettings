@@ -55,6 +55,9 @@ set background=dark
 " colorscheme solarized
 colorscheme zenburn
 
+" Overrides the search hilighting colors.
+highlight Search guibg=peru guifg=wheat
+
 " Platform specific stuff 
 if has("gui_running") 
   if has("win32")
