@@ -22,17 +22,13 @@ map <C-S-right> :bn<CR>
 map <C-S-left>  :bp<CR>
 map <C-S-up>    :b#<CR>
 
-" Shifts
-" through the open tabs...
-map <C-Tab>   :tabn<CR>
-map <C-S-Tab> :tabp<CR>
-
 " Some mappings for the function keys
 map <F2> :NERDTreeToggle<CR>                " Toggles the opening of the nerd tree
 map <F3> :TlistToggle<CR>                   " Toggles the opening of the tag list window
 map <F4> :b#<CR>                            " Switches to the alternative buffer
 map <F5> :make<CR>                          " Runs the make command
 
+" Shortcut for ctrl-p's open buffers listing.
 map <c-b> :CtrlPBuffer<CR>
 
 " Use c syntax for asm/xc files..
@@ -52,9 +48,11 @@ endif
 
 " Color scheme.
 set background=dark
-" colorscheme desert
-" colorscheme solarized
-colorscheme zenburn
+if &diff
+  colorscheme desert
+else
+  colorscheme zenburn
+endif
 
 " Overrides the hi-lighting colors.
 highlight Search guibg=peru guifg=wheat
@@ -82,5 +80,5 @@ let g:NERDTreeDirArrows=0
 " Set tab completion to match bash
 set wildmode=longest,list
 
-" Enables the listing of open buffers.
+" Enables the listing of open buffers (via airline plugin).
 let g:airline#extensions#tabline#enabled = 1
