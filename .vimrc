@@ -57,6 +57,7 @@ endif
 " Overrides the hi-lighting colors.
 highlight Search guibg=peru guifg=wheat
 highlight MatchParen guifg=IndianRed
+highlight Visual guifg=White guibg=RosyBrown4 gui=none
 
 " Platform specific stuff 
 if has("gui_running") 
