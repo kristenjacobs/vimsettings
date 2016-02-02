@@ -22,12 +22,6 @@ map <C-S-right> :bn<CR>
 map <C-S-left>  :bp<CR>
 map <C-S-up>    :b#<CR>
 
-" Some mappings for the function keys
-map <F2> :NERDTreeToggle<CR>                " Toggles the opening of the nerd tree
-map <F3> :TlistToggle<CR>                   " Toggles the opening of the tag list window
-map <F4> :b#<CR>                            " Switches to the alternative buffer
-map <F5> :make<CR>                          " Runs the make command
-
 " Shortcut for ctrl-p's open buffers listing.
 map <c-b> :CtrlPBuffer<CR>
 
@@ -37,17 +31,9 @@ map <c-l> :call BufferList()<CR>
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
 
-" Cd to the directory of the current buffer.
-com CdBuf :cd %:p:h
-
 " Status line configuration.
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [POS=%04l,%04v][%p%%]
 set laststatus=2
-
-" Version 7.0 specific stuff.
-if version >= 700
-  set cursorline
-endif
 
 " Color scheme.
 set background=dark
@@ -55,12 +41,14 @@ if &diff
   colorscheme desert
 else
   colorscheme zenburn
+  " Overrides some of the above hilighting colors.
+  highlight Search guibg=peru guifg=wheat
+  highlight Search ctermbg=brown ctermfg=white
+  highlight MatchParen guifg=IndianRed
+  highlight MatchParen ctermfg=red
+  highlight Visual guifg=White guibg=RosyBrown4 gui=none
+  highlight Visual ctermfg=White ctermbg=brown
 endif
-
-" Overrides the hi-lighting colors.
-highlight Search guibg=peru guifg=wheat
-highlight MatchParen guifg=IndianRed
-highlight Visual guifg=White guibg=RosyBrown4 gui=none
 
 " Platform specific stuff 
 if has("gui_running") 
