@@ -22,12 +22,6 @@ map <C-S-right> :bn<CR>
 map <C-S-left>  :bp<CR>
 map <C-S-up>    :b#<CR>
 
-" Shortcut for ctrl-p's open buffers listing.
-map <c-b> :CtrlPBuffer<CR>
-
-" Shortcut for bufferlist's open buffers listing.
-map <c-l> :call BufferList()<CR>
-
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
 
