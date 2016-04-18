@@ -15,6 +15,7 @@ set number
 set guioptions+=b
 set showmode
 set nomore
+set cursorline
 
 " Shifts backwards and forward 
 " through the open buffers...
@@ -42,6 +43,7 @@ else
   highlight MatchParen ctermfg=red
   highlight Visual guifg=White guibg=RosyBrown4 gui=none
   highlight Visual ctermfg=White ctermbg=brown
+  highlight CursorLine ctermbg=236 guibg=#303030
 endif
 
 " Platform specific stuff 
