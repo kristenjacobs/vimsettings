@@ -32,19 +32,20 @@ set laststatus=2
 
 " Color scheme.
 set background=dark
-if &diff
-  colorscheme desert
-else
-  colorscheme zenburn
-  " Overrides some of the above hilighting colors.
-  highlight Search guibg=peru guifg=wheat
-  highlight Search ctermbg=brown ctermfg=white
-  highlight MatchParen guifg=IndianRed
-  highlight MatchParen ctermfg=red
-  highlight Visual guifg=White guibg=RosyBrown4 gui=none
-  highlight Visual ctermfg=White ctermbg=brown
-  highlight CursorLine ctermbg=236 guibg=#303030
-endif
+colorscheme gruvbox
+"if &diff
+"  colorscheme desert
+"else
+"  colorscheme zenburn
+"  " Overrides some of the above hilighting colors.
+"  highlight Search guibg=peru guifg=wheat
+"  highlight Search ctermbg=brown ctermfg=white
+"  highlight MatchParen guifg=IndianRed
+"  highlight MatchParen ctermfg=red
+"  highlight Visual guifg=White guibg=RosyBrown4 gui=none
+"  highlight Visual ctermfg=White ctermbg=brown
+"  highlight CursorLine ctermbg=236 guibg=#303030
+"endif
 
 " Platform specific stuff 
 if has("gui_running") 
