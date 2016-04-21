@@ -46,3 +46,6 @@ set wildmode=longest,list
 
 " Enables the listing of open buffers (via airline plugin).
 let g:airline#extensions#tabline#enabled = 1
+
+" Adds shortcut for opening/closing the buffer list.
+:noremap <Leader>b :call BufferList()<CR>
