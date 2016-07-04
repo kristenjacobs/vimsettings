@@ -16,6 +16,8 @@ set guioptions+=b
 set showmode
 set nomore
 set cursorline
+set mouse=a
+set clipboard=unnamed
 
 " Shifts backwards and forward 
 " through the open buffers...
