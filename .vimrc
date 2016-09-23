@@ -40,7 +40,7 @@ colorscheme gruvbox
 if has("gui_running") 
     set directory=/tmp
     set lines=40 columns=100
-    set guifont=Monospace\ 9
+    set guifont=Monospace\ 10
 endif
 
 " Set tab completion to match bash
@@ -51,3 +51,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Adds shortcut for opening/closing the buffer list.
 :noremap <Leader>b :call BufferList()<CR>
+
+" Syntastic config
+" let g:syntastic_python_checkers = ['pylint']
+
