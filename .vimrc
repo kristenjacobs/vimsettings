@@ -53,5 +53,9 @@ let g:airline#extensions#tabline#enabled = 1
 :noremap <Leader>b :call BufferList()<CR>
 
 " Syntastic config
-" let g:syntastic_python_checkers = ['pylint']
-
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['pylint']
