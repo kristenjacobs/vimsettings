@@ -17,7 +17,9 @@ set showmode
 set nomore
 set cursorline
 set mouse=a
-set clipboard=unnamed
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
 
 " Shifts backwards and forward 
 " through the open buffers...
