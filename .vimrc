@@ -23,9 +23,8 @@ endif
 
 " Shifts backwards and forward 
 " through the open buffers...
-map <C-S-right> :bn<CR>
-map <C-S-left>  :bp<CR>
-map <C-S-up>    :b#<CR>
+map <Tab>   :bn<CR>
+map <S-Tab> :bp<CR>
 
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
