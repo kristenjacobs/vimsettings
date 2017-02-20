@@ -29,8 +29,8 @@ map <S-Tab> :bp<CR>
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
 
-" Enable folding on markers for pw files..
-au BufRead,BufNewFile *.pw set foldmethod=marker 
+" Enable folding on markers for password files..
+au BufReadCmd,FileReadCmd *.txt.gpg set foldmethod=marker 
 
 " Status line configuration.
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [POS=%04l,%04v][%p%%]
