@@ -63,3 +63,14 @@ set statusline+=%*
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
+
+" Uses the old regex engine for clojure files, as it is really slow
+" otherwise..
+autocmd BufNewFile,BufRead *.clj set re=1
+
+" Sets ack.vim to use ag as the search engine instead of ack.
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
