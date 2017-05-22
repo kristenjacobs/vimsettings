@@ -29,6 +29,9 @@ map <S-Tab> :bp<CR>
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
 
+" Use clojure syntax for kp files..
+au BufRead,BufNewFile *.kp set filetype=clojure 
+
 " Enable folding on markers for password files..
 au BufReadCmd,FileReadCmd *.txt.gpg set foldmethod=marker 
 
@@ -53,8 +56,11 @@ set wildmode=longest,list
 " Enables the listing of open buffers (via airline plugin).
 let g:airline#extensions#tabline#enabled = 1
 
-" Adds shortcut for opening/closing the buffer list.
+" Add shortcut for opening/closing the buffer list.
 :noremap <Leader>b :call BufferList()<CR>
+
+" Add shortcut for deletoing the current buffer.
+map <Leader>d :bd<CR>
 
 " Syntastic config
 set statusline+=%#warningmsg#
