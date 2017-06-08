@@ -80,3 +80,6 @@ cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+
+" Use clojure syntax highlighting for kp files.
+autocmd BufNewFile,BufRead *.kp   set syntax=clojure
