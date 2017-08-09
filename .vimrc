@@ -1,4 +1,26 @@
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'https://github.com/morhetz/gruvbox.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/vim-scripts/Conque-Shell.git'
+Plug 'https://github.com/bling/vim-airline.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/jlanzarotta/bufexplorer.git'
+Plug 'https://github.com/chazy/cscope_maps.git'
+Plug 'https://github.com/vim-scripts/taglist.vim.git'
+Plug 'https://github.com/mileszs/ack.vim.git'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/jnurmine/Zenburn.git'
+Plug 'https://github.com/guns/vim-clojure-static.git'
+Plug 'https://github.com/tpope/vim-fireplace.git'
+Plug 'https://github.com/altercation/vim-colors-solarized.git'
+Plug 'https://github.com/kien/rainbow_parentheses.vim.git'
+Plug 'https://github.com/jamessan/vim-gnupg.git'
+Plug 'https://github.com/roblillack/vim-bufferlist.git'
+Plug 'https://github.com/scrooloose/syntastic.git'
+Plug 'https://github.com/croaker/mustang-vim.git'
+Plug 'https://github.com/fatih/vim-go.git'
+call plug#end()
 
 syntax on
 filetype plugin indent on
