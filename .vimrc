@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/morhetz/gruvbox.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/vim-scripts/Conque-Shell.git'
+Plug 'https://github.com/lrvick/Conque-Shell.git'
 Plug 'https://github.com/bling/vim-airline.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/jlanzarotta/bufexplorer.git'
