@@ -39,9 +39,6 @@ set showmode
 set nomore
 set cursorline
 set mouse=a
-if $TMUX == ''
-    set clipboard+=unnamed
-endif
 
 " Shifts backwards and forward 
 " through the open buffers...
@@ -103,5 +100,3 @@ cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
 
-" Use clojure syntax highlighting for kp files.
-autocmd BufNewFile,BufRead *.kp   set syntax=clojure
