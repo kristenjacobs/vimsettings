@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'https://github.com/morhetz/gruvbox.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/lrvick/Conque-Shell.git'
@@ -44,6 +43,9 @@ set mouse=a
 " through the open buffers...
 map <Tab>   :bn<CR>
 map <S-Tab> :bp<CR>
+
+" Go goto definition
+map <F3> :GoDef<CR>
 
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
