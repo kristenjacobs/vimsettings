@@ -45,7 +45,7 @@ map <Tab>   :bn<CR>
 map <S-Tab> :bp<CR>
 
 " Go goto definition
-map <F3> :GoDef<CR>
+map <F5> :GoDef<CR>
 
 " Use c syntax for asm/xc files..
 au BufRead,BufNewFile *.xc set filetype=xc 
